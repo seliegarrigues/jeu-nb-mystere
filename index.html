@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu : le Nombre Mystère</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Jeu du numéro Mystère</h1>
+
+    <p>Nous avons sélectionné un nombre aléatoire entre 1 et 100. Essayez de le deviner en moins de 10 tours . Pour vous aider,  Nous vous indiquerons si le chiffre estimé est trop petit ou trop grand.</p>
+
+    <div class="form">
+      <label for="suggestion">Taper votre suggestion</label>
+      <input type="number" min="1" max="100" required id="suggestion" class="suggestion">
+      <input type="submit" value="C'est parti!" class="cParti">
+    </div>
+
+    <div class="resultParas">
+      <p class="nbSuggere"></p>
+      <p class="resultatFinal"></p>
+      <p class="plusPetitOuPlusGrand"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
